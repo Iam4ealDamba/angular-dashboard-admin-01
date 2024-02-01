@@ -1,0 +1,15 @@
+<div
+  class="fixed z-[10] top-0 left-0 w-[100vw] h-[100vh] bg-black/30"
+  [class]="showModal ? 'block' : 'hidden'"
+>
+  <div class="w-[350px] h-full flex">
+    <wrapper-standard-aside></wrapper-standard-aside>
+    <div>
+      <button class="w-8 h-8 flex items-center justify-center bg-tw_secondary">
+        <mat-icon class="scale-[90%]" (click)="showModal = !showModal"
+          >close</mat-icon
+        >
+      </button>
+    </div>
+  </div>
+</div>

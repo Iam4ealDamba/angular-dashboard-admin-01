@@ -1,0 +1,28 @@
+<header>
+  <div class="w-full py-5 px-6 flex bg-tw_light">
+    <div class="flex-1 flex items-center gap-x-4">
+      <div aria-label="Menu Logo">
+        <icon-button (click)="is_aside_modal = true"> menu </icon-button>
+      </div>
+      <div class="header" aria-label="BreadCrumb">
+        <p><a href="/" class="font-semibold">Home</a>/Dashboard</p>
+      </div>
+    </div>
+    <div class="flex items-center gap-x-6">
+      <div class="flex gap-x-4" aria-label="Icons">
+        <icon-button> search </icon-button>
+        <icon-button> dark_mode </icon-button>
+      </div>
+      <div
+        class="relative flex items-center gap-x-4 py-1 px-4 rounded-full cursor-pointer border-[1px] border-tw_dark/30 bg-tw_accent"
+        aria-label="Profile"
+      >
+        <mat-icon class="scale-[90%]">account_circle</mat-icon>
+        <p class="font-semibold">Admin Username</p>
+      </div>
+    </div>
+  </div>
+</header>
+<wrapper-standard-modal-aside
+  [showModal]="is_aside_modal"
+></wrapper-standard-modal-aside>
